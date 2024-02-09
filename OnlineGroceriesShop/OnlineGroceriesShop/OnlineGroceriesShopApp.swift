@@ -11,7 +11,9 @@ import SwiftUI
 struct OnlineGroceriesShopApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView{
+                WelcomeView()
+            }
         }
     }
 }
