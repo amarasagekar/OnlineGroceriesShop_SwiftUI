@@ -19,6 +19,8 @@
 		0996C4FD2B74893900FBDF1A /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0996C4FC2B74893900FBDF1A /* UIExtension.swift */; };
 		0996C4FF2B74C48400FBDF1A /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0996C4FE2B74C48400FBDF1A /* RoundButton.swift */; };
 		0996C5012B74C73500FBDF1A /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0996C5002B74C73500FBDF1A /* SignInView.swift */; };
+		09CD10742B7DFF25001CEE58 /* LineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CD10732B7DFF25001CEE58 /* LineTextField.swift */; };
+		09CD10762B7E195E001CEE58 /* ServiceCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CD10752B7E195E001CEE58 /* ServiceCall.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		0996C4FC2B74893900FBDF1A /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
 		0996C4FE2B74C48400FBDF1A /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		0996C5002B74C73500FBDF1A /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		09CD10732B7DFF25001CEE58 /* LineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineTextField.swift; sourceTree = "<group>"; };
+		09CD10752B7E195E001CEE58 /* ServiceCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCall.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +138,8 @@
 				0996C4FC2B74893900FBDF1A /* UIExtension.swift */,
 				0996C4FE2B74C48400FBDF1A /* RoundButton.swift */,
 				0946BDEA2B77E4B100ACA084 /* CountryPickerUI.swift */,
+				09CD10732B7DFF25001CEE58 /* LineTextField.swift */,
+				09CD10752B7E195E001CEE58 /* ServiceCall.swift */,
 			);
 			path = UICommon;
 			sourceTree = "<group>";
@@ -226,11 +232,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0946BDEB2B77E4B100ACA084 /* CountryPickerUI.swift in Sources */,
+				09CD10742B7DFF25001CEE58 /* LineTextField.swift in Sources */,
 				0946BDED2B77E97700ACA084 /* LoginView.swift in Sources */,
 				0996C4FF2B74C48400FBDF1A /* RoundButton.swift in Sources */,
 				0996C4E02B74806600FBDF1A /* OnlineGroceriesShopApp.swift in Sources */,
 				0996C4FD2B74893900FBDF1A /* UIExtension.swift in Sources */,
 				0996C4F92B7482E200FBDF1A /* WelcomeView.swift in Sources */,
+				09CD10762B7E195E001CEE58 /* ServiceCall.swift in Sources */,
 				0996C5012B74C73500FBDF1A /* SignInView.swift in Sources */,
 				098F9E942B78CF6E008F021A /* MainViewModel.swift in Sources */,
 			);

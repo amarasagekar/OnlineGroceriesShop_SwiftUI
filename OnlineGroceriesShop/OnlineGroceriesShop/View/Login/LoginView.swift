@@ -9,7 +9,8 @@ import SwiftUI
 
 struct LoginView: View {
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
-    @State var txtEmail: String = ""
+    @StateObject var loginVM = MainViewModel.shared;
+    
     var body: some View {
         ZStack{
             Image("bottom_bg")
@@ -22,7 +23,7 @@ struct LoginView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 40)
-                    .padding(.bottom, .screenWidth * 0.12)
+                    .padding(.bottom, .screenWidth * 0.1)
                 
                
                 
@@ -38,18 +39,37 @@ struct LoginView: View {
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
                     .padding(.bottom, .screenWidth * 0.12)
                 
-                VStack{
-                    Text("Email")
-                        .font(.customfont(.semibold, fontSize: 16))
-                        .foregroundColor(.textTitle)
-                        .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
-                    
-                    TextField("", text:)
-                    
-                    Divider()
-                        
-                }
+                LineTextField(txt: $loginVM.txtEmail, title: "Email", placeholder: "Enter Your email address", keyBoardType: .emailAddress)
+                    .padding(.bottom, .screenWidth * 0.07)
                 
+                LineSecureField(txt: $loginVM.txtPassword, title: "Password", placeholder: "Enter Your Password", isShowPassword: $loginVM.isShowPassword)
+                    .padding(.bottom, .screenWidth * 0.02)
+                
+                Button{
+                    
+                }label: {
+                    Text("Forgot Password?")
+                        .font(.customfont(.semibold, fontSize: 16))
+                        .foregroundColor(.primaryText)
+                }
+                .frame(minWidth: 0, maxWidth: .infinity, alignment: .trailing)
+                .padding(.bottom, .screenWidth * 0.03)
+                
+                RoundButton(title: "Login"){
+                    
+                }
+                .padding(.bottom, .screenWidth * 0.05)
+                
+                HStack{
+                    Text("Don't have an account?")
+                        .font(.customfont(.semibold, fontSize: 14))
+                        .foregroundColor(.primaryText)
+                    
+                    Text("Signup")
+                        .font(.customfont(.semibold, fontSize: 14))
+                        .foregroundColor(.primaryApp)
+                }
+                   
                 Spacer()
             }
             .padding(.top, .topInsets)
