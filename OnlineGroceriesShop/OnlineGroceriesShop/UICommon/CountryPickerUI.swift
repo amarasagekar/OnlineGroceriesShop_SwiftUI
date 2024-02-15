@@ -35,6 +35,6 @@ struct CountryPickerUI: UIViewControllerRepresentable {
     }
     
     func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
-        <#code#>
+        
     }
 }
